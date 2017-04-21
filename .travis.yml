@@ -4,7 +4,7 @@ install:
   - nuget restore SonarQube.Scanner.MSBuild.sln
 
 script:
-  - msbuild SonarQube.Scanner.MSBuild.sln
+  - cmd /c build.cmd
 
 
 branches:
