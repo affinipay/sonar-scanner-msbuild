@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        bat(script: 'build.cmd', encoding: 'us-ascii')
+        bat(script: 'echo %PATH%', encoding: 'us-ascii')
       }
     }
   }
