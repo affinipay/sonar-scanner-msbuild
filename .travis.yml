@@ -1,0 +1,14 @@
+language: csharp
+
+install:
+  - nuget restore SonarQube.Scanner.MSBuild.sln
+
+script:
+  - msbuild SonarQube.Scanner.MSBuild.sln
+
+
+branches:
+  only: udev/find-scanner
+
+notifications:
+  email: vude@affinipay.com
